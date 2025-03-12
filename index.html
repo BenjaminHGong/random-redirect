@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        const links = [
+            "https://forms.office.com/r/1UpNSDQdA3",
+            "https://forms.office.com/r/BJsyVbaVLk"
+        ];
+
+        window.location.href = links[Math.floor(Math.random() * links.length)];
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a id="manualLink" href="#">click here</a>.</p>
+    <script>
+        document.getElementById("manualLink").href = links[Math.floor(Math.random() * links.length)];
+    </script>
+</body>
+</html>
